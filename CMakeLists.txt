@@ -8,7 +8,9 @@ add_scade_application(List_And_Tab_Practice_Scade "com.scade.List_And_Tab_Practi
 	RESOURCES
 		RESOURCES_GROUP "src" NOPREFIX
 			main.page
-		RESOURCES_GROUP NOBASE NOPREFIX)
+		RESOURCES_GROUP NOBASE NOPREFIX
+			"res/fonts"
+			"res/fonts/ArialMT.ttf")
 set_property(TARGET List_And_Tab_Practice_Scade PROPERTY ANDROID_KEYSTORE_PROPERTIES_FILE "${ANDROID_KEYSTORE_PROPERTIES_FILE}")
 set_property(TARGET List_And_Tab_Practice_Scade PROPERTY ANDROID_VERSION_NAME "1.0.0")
 set_property(TARGET List_And_Tab_Practice_Scade PROPERTY ANDROID_VERSION_CODE "1")

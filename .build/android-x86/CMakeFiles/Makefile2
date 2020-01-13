@@ -107,9 +107,9 @@ CMakeFiles/List_And_Tab_Practice_Scade-app-apk.dir/clean:
 # Target rules for target CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir
 
 # All Build rule for target.
-CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir/all: CMakeFiles/List_And_Tab_Practice_Scade-app-apk-write-scripts-list.dir/all
-CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir/all: CMakeFiles/List_And_Tab_Practice_Scade-app-apk-configure-build.dir/all
 CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir/all: CMakeFiles/List_And_Tab_Practice_Scade-app-apk-copy.dir/all
+CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir/all: CMakeFiles/List_And_Tab_Practice_Scade-app-apk-configure-build.dir/all
+CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir/all: CMakeFiles/List_And_Tab_Practice_Scade-app-apk-write-scripts-list.dir/all
 	$(MAKE) -f CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir/build.make CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir/depend
 	$(MAKE) -f CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir/build.make CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles --progress-num= "Built target List_And_Tab_Practice_Scade-app-apk-gradle"

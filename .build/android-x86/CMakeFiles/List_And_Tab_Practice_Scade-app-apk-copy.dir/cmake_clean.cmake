@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "List_And_Tab_Practice_Scade-app-apk-android/assets/libList_And_Tab_Practice_Scade.so"
   "List_And_Tab_Practice_Scade-app-apk-android/assets/log.conf"
   "List_And_Tab_Practice_Scade-app-apk-android/assets/main.page"
+  "List_And_Tab_Practice_Scade-app-apk-android/assets/res/fonts/ArialMT.ttf"
   "List_And_Tab_Practice_Scade-app-apk-android/assets/templates/AlphabeticalList.xmi"
   "List_And_Tab_Practice_Scade-app-apk-android/assets/templates/Button.xmi"
   "List_And_Tab_Practice_Scade-app-apk-android/assets/templates/Checkbox.xmi"

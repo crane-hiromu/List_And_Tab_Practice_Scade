@@ -599,6 +599,7 @@ zoneinfo/zone.tab
 zoneinfo/zone1970.tab
 libList_And_Tab_Practice_Scade.so
 main.page
+res/fonts/ArialMT.ttf
 log.conf
 templates/AlphabeticalList.xmi
 templates/Button.xmi
