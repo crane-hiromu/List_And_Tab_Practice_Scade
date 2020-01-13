@@ -1,12 +1,18 @@
 import ScadeKit
 
 class List_And_Tab_Practice_Scade: SCDApplication {
+	
+	// MARK: Properties
 
-	let window = SCDLatticeWindow()
-	let mainAdapter = MainPageAdapter()
+	private let window = SCDLatticeWindow()
+	
+	private lazy var mainAdapter: MainPageAdapter = {
+		let adapter = MainPageAdapter()
+		adapter.load(MainPageAdapter.pageName)
+		return adapter
+	}()
 	
 	override func onFinishLaunching() {	
-		mainAdapter.load("main.page")
 		mainAdapter.show(window)
 	}
 }
