@@ -1,0 +1,4 @@
+set solib-search-path /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/List_And_Tab_Practice_Scade-app-apk-android/obj/local/x86
+source /Users/tsuruhiro/Library/Android/android-ndk-r17c/prebuilt/common/gdb/common.setup
+directory /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/include /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/gnu-libstdc++/4.9/include /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
+

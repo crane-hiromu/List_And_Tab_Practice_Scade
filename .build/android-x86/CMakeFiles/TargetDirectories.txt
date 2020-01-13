@@ -1,0 +1,9 @@
+/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/rebuild_cache.dir
+/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/edit_cache.dir
+/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/List_And_Tab_Practice_Scade-app-apk.dir
+/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/List_And_Tab_Practice_Scade-app-apk-gradle.dir
+/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/List_And_Tab_Practice_Scade-app-apk-configure-build.dir
+/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/List_And_Tab_Practice_Scade-app-apk-write-scripts-list.dir
+/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/List_And_Tab_Practice_Scade-autolink-targ.dir
+/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/List_And_Tab_Practice_Scade-app-apk-copy.dir
+/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/List_And_Tab_Practice_Scade.dir

@@ -1,0 +1,298 @@
+The target system is: Android - 1 - i686
+The host system is: Darwin - 18.7.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang 
+Build flags: -fexceptions;-gcc-toolchain;/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64;-target;i686-none-linux-android;-Qunused-arguments;--sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86;-funwind-tables;-fsigned-char;-no-canonical-prefixes;-Xclang;-mnoexecstack;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/3.15.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ 
+Build flags: -fexceptions;-frtti;-gcc-toolchain;/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64;-target;i686-none-linux-android;-Qunused-arguments;--sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86;-funwind-tables;-fsigned-char;-no-canonical-prefixes;-Xclang;-mnoexecstack;;-I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include;-I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/3.15.1/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make cmTC_696f5/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_696f5.dir/build.make CMakeFiles/cmTC_696f5.dir/build
+Building C object CMakeFiles/cmTC_696f5.dir/testCCompiler.c.o
+/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang   -fexceptions -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack   -fPIE   -o CMakeFiles/cmTC_696f5.dir/testCCompiler.c.o   -c /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_696f5
+/Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_696f5.dir/link.txt --verbose=1
+/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -fexceptions -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack      CMakeFiles/cmTC_696f5.dir/testCCompiler.c.o  -o cmTC_696f5 
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make cmTC_0a694/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_0a694.dir/build.make CMakeFiles/cmTC_0a694.dir/build
+Building C object CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o
+/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang   -fexceptions -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack   -fPIE   -v -o CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o   -c /Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/share/cmake-3.15/Modules/CMakeCCompilerABI.c
+Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)
+Target: i686-none-linux-android
+Thread model: posix
+InstalledDir: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Selected GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Candidate multilib: .;@m32
+Selected multilib: .;@m32
+ "/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang" -cc1 -triple i686-none-linux-android -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu i686 -target-feature +ssse3 -dwarf-column-info -debugger-tuning=gdb -target-linker-version 241.9 -v -coverage-notes-file /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.gcno -resource-dir /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2 -isysroot /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -internal-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/local/include -internal-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include -internal-externc-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/include -internal-externc-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/include -fdebug-compilation-dir /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -femulated-tls -fobjc-runtime=gcc -fexceptions -fdiagnostics-show-option -mnoexecstack -o CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o -x c /Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/share/cmake-3.15/Modules/CMakeCCompilerABI.c
+clang -cc1 version 6.0.2 based upon LLVM 6.0.2svn default target x86_64-apple-darwin18.7.0
+ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/local/include"
+ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/include"
+ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include
+End of search list.
+Linking C executable cmTC_0a694
+/Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a694.dir/link.txt --verbose=1
+/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -fexceptions -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack     -v CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o  -o cmTC_0a694 
+Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)
+Target: i686-none-linux-android
+Thread model: posix
+InstalledDir: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Selected GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Candidate multilib: .;@m32
+Selected multilib: .;@m32
+ "/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_0a694 /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386 -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtend_android.o
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include]
+  end of search list found
+  collapse include dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include]
+  implicit include dirs: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(i686-linux-android-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):make cmTC_0a694/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_0a694.dir/build.make CMakeFiles/cmTC_0a694.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang   -fexceptions -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack   -fPIE   -v -o CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o   -c /Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/share/cmake-3.15/Modules/CMakeCCompilerABI.c]
+  ignore line: [Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)]
+  ignore line: [Target: i686-none-linux-android]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m32]
+  ignore line: [ "/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang" -cc1 -triple i686-none-linux-android -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu i686 -target-feature +ssse3 -dwarf-column-info -debugger-tuning=gdb -target-linker-version 241.9 -v -coverage-notes-file /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.gcno -resource-dir /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2 -isysroot /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -internal-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/local/include -internal-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include -internal-externc-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/include -internal-externc-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/include -fdebug-compilation-dir /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -femulated-tls -fobjc-runtime=gcc -fexceptions -fdiagnostics-show-option -mnoexecstack -o CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o -x c /Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/share/cmake-3.15/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 6.0.2 based upon LLVM 6.0.2svn default target x86_64-apple-darwin18.7.0]
+  ignore line: [ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/include"]
+  ignore line: [ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_0a694]
+  ignore line: [/Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a694.dir/link.txt --verbose=1]
+  ignore line: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -fexceptions -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack     -v CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o  -o cmTC_0a694 ]
+  ignore line: [Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)]
+  ignore line: [Target: i686-none-linux-android]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m32]
+  link line: [ "/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_0a694 /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386 -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
+    arg [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_0a694] ==> ignore
+    arg [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386] ==> dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386]
+    arg [-L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+    arg [-L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib]
+    arg [-L/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib] ==> dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib]
+    arg [CMakeFiles/cmTC_0a694.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtend_android.o] ==> ignore
+  collapse library dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386]
+  collapse library dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  collapse library dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/i686-linux-android/lib]
+  collapse library dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib]
+  implicit libs: [gcc;dl;c;gcc;dl]
+  implicit dirs: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386;/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x;/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/i686-linux-android/lib;/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make cmTC_b04fb/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b04fb.dir/build.make CMakeFiles/cmTC_b04fb.dir/build
+Building CXX object CMakeFiles/cmTC_b04fb.dir/testCXXCompiler.cxx.o
+/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++    -fexceptions -frtti -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack  -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include  -fPIE   -o CMakeFiles/cmTC_b04fb.dir/testCXXCompiler.cxx.o -c /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_b04fb
+/Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b04fb.dir/link.txt --verbose=1
+/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++  -fexceptions -frtti -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack  -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include     CMakeFiles/cmTC_b04fb.dir/testCXXCompiler.cxx.o  -o cmTC_b04fb 
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make cmTC_a0b72/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a0b72.dir/build.make CMakeFiles/cmTC_a0b72.dir/build
+Building CXX object CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o
+/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++    -fexceptions -frtti -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack  -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include  -fPIE   -v -o CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o -c /Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
+Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)
+Target: i686-none-linux-android
+Thread model: posix
+InstalledDir: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Selected GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Candidate multilib: .;@m32
+Selected multilib: .;@m32
+ "/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++" -cc1 -triple i686-none-linux-android -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu i686 -target-feature +ssse3 -dwarf-column-info -debugger-tuning=gdb -target-linker-version 241.9 -v -coverage-notes-file /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2 -I /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include -I /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include -isysroot /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -internal-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/local/include -internal-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include -internal-externc-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/include -internal-externc-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/include -fdeprecated-macro -fdebug-compilation-dir /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -femulated-tls -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -mnoexecstack -o CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 6.0.2 based upon LLVM 6.0.2svn default target x86_64-apple-darwin18.7.0
+ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/local/include"
+ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/include"
+ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include
+ /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include
+ /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include
+End of search list.
+Linking CXX executable cmTC_a0b72
+/Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0b72.dir/link.txt --verbose=1
+/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++  -fexceptions -frtti -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack  -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include    -v CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a0b72 
+Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)
+Target: i686-none-linux-android
+Thread model: posix
+InstalledDir: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Selected GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Candidate multilib: .;@m32
+Selected multilib: .;@m32
+ "/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_a0b72 /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386 -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtend_android.o
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include]
+    add: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include]
+    add: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include]
+  end of search list found
+  collapse include dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include]
+  collapse include dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include]
+  collapse include dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include]
+  implicit include dirs: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include;/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include;/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(i686-linux-android-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):make cmTC_a0b72/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a0b72.dir/build.make CMakeFiles/cmTC_a0b72.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++    -fexceptions -frtti -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack  -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include  -fPIE   -v -o CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o -c /Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)]
+  ignore line: [Target: i686-none-linux-android]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m32]
+  ignore line: [ "/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++" -cc1 -triple i686-none-linux-android -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu i686 -target-feature +ssse3 -dwarf-column-info -debugger-tuning=gdb -target-linker-version 241.9 -v -coverage-notes-file /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2 -I /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include -I /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include -isysroot /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -internal-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/local/include -internal-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include -internal-externc-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/include -internal-externc-isystem /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/include -fdeprecated-macro -fdebug-compilation-dir /Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -femulated-tls -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -mnoexecstack -o CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 6.0.2 based upon LLVM 6.0.2svn default target x86_64-apple-darwin18.7.0]
+  ignore line: [ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/include"]
+  ignore line: [ignoring nonexistent directory "/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include]
+  ignore line: [ /Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include]
+  ignore line: [ /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_a0b72]
+  ignore line: [/Users/tsuruhiro/Scade/.metadata/.plugins/com.scade.sdk.toolchain.latest/Toolchain/thirdparty/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0b72.dir/link.txt --verbose=1]
+  ignore line: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++  -fexceptions -frtti -gcc-toolchain /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64 -target i686-none-linux-android -Qunused-arguments --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 -funwind-tables -fsigned-char -no-canonical-prefixes -Xclang -mnoexecstack  -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++/include -I/Users/tsuruhiro/Library/Android/android-ndk-r17c/sources/cxx-stl/llvm-libc++abi/include    -v CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a0b72 ]
+  ignore line: [Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)]
+  ignore line: [Target: i686-none-linux-android]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m32]
+  link line: [ "/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86 --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_a0b72 /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386 -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtend_android.o]
+    arg [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a0b72] ==> ignore
+    arg [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386] ==> dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386]
+    arg [-L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+    arg [-L/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib]
+    arg [-L/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib] ==> dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib]
+    arg [CMakeFiles/cmTC_a0b72.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib/crtend_android.o] ==> ignore
+  collapse library dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386]
+  collapse library dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  collapse library dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/i686-linux-android/lib]
+  collapse library dir [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib] ==> [/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib]
+  implicit libs: [stdc++;m;gcc;gcc;dl;c;gcc;gcc;dl]
+  implicit dirs: [/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/i386;/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x;/Users/tsuruhiro/Library/Android/android-ndk-r17c/toolchains/x86-4.9/prebuilt/darwin-x86_64/i686-linux-android/lib;/Users/tsuruhiro/Library/Android/android-ndk-r17c/platforms/android-21/arch-x86/usr/lib]
+  implicit fwks: []
+
+

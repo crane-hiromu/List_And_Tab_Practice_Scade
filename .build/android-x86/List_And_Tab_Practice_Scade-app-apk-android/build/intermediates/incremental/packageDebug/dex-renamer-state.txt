@@ -1,0 +1,4 @@
+#Mon Jan 13 03:26:12 JST 2020
+base.0=/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/List_And_Tab_Practice_Scade-app-apk-android/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/tsuruhiro/Scade/List_And_Tab_Practice_Scade/.build/android-x86/List_And_Tab_Practice_Scade-app-apk-android/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
