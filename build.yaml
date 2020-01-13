@@ -38,8 +38,8 @@ ios:
     search-paths: []
     linked-libs: []
   sign:
-    provision-profile:
-    certificate:
+    provision-profile: /Users/admin/Scade/profile/appscade.mobileprovision
+    certificate: /Users/admin/Scade/profile/appscade.p12
     beta-reports-active: false
   icons:
     iphone: # or ipad, sizes: 20X20, 29X29, 40X40, 60X60, 76X76, 83.5X83.5
