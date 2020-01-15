@@ -6,9 +6,9 @@ import Foundation
 extension String {
 	
     var camelToSnake: String {
-        return self.replacingOccurrences(
+		return self.replacingOccurrences(
 			of: "([A-Z])",
-         	with: "_$1",
+			with: "_$1",
 			options: .regularExpression,
 			range: self.startIndex ..< self.endIndex
 		).lowercased()
