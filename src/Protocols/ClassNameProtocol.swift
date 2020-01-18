@@ -1,5 +1,4 @@
 import ScadeKit
-import Foundation
 
 // MARK: - Protocol 
 

@@ -11,15 +11,15 @@ extension SCDWidgetsWidget {
 	*/
 	
 	var asLabel: SCDWidgetsLabel? {
-		self as? SCDWidgetsLabel
+		return self as? SCDWidgetsLabel
 	}
 	
 	var asList: SCDWidgetsListView? {
-		self as? SCDWidgetsListView
+		return self as? SCDWidgetsListView
 	}
 	
 	var asRow: SCDWidgetsRowView? {
-		self as? SCDWidgetsRowView
+		return self as? SCDWidgetsRowView
 	}
 	
 	
@@ -30,6 +30,6 @@ extension SCDWidgetsWidget {
 	 
 	*/
 	func cast<T: SCDWidgetsWidget>(for: T.Type) -> T? {
-		self as? T
+		return self as? T
 	}
 }
