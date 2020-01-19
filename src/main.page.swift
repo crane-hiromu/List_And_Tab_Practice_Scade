@@ -18,9 +18,6 @@ final class MainPageAdapter: SCDLatticePageAdapter {
 	private lazy var listControl: SCDWidgetsList! = {
 	   let widget = self.page?.getWidgetByName("mainList")
 	   let list = widget as? SCDWidgetsList
-//	   list?.items = ["hoge", "huga", "fizz", "buzz"]
-//	   list?.elements
-//	   list?.template.element.children
 	   return list
 	}()
 	
@@ -30,27 +27,32 @@ final class MainPageAdapter: SCDLatticePageAdapter {
 		return decoder
 	}()
 	
-//	private lazy var row: SCDWidgetsRowView? = {
-//	   let widget = self.page?.getWidgetByName("mainListRow")
-//	   let row = widget as? SCDWidgetsRowView
-//	   return row
-//	}()
-
-	private var viewModel: MainPageViewModel?
-	
 	// MARK: Overrides
 	
 	override func load(_ path: String) {		
 		super.load(path)
-		
+		debugPrint("---\(#function)---")
+	
 		// todo
 		#if(os(iOS))
 		statusVar.isExclude.toggle()
+		debugPrint("---iOS---")
 		#endif
+	}
+	
+	override func activate(_ view: SCDLatticeView?) {
+		super.activate(view)
+		debugPrint("---\(#function)---")
+	}
+	
+	override func show(_ view: SCDLatticeView?, data: Any?) {
+		super.show(view, data: data)
+		debugPrint("---\(#function)---")
 	}
 	
 	override func show(_ view: SCDLatticeView?) {
 		super.show(view)
+		debugPrint("---\(#function)---")
 		
     let url = URL(string: "https://api.droidkaigi.jp/2020/speakers/")!
     let session = URLSession.shared
@@ -59,35 +61,45 @@ final class MainPageAdapter: SCDLatticePageAdapter {
     request.httpMethod = "GET"
     request.addValue("application/json;charset=utf-8", forHTTPHeaderField: "Content-Type")
     
+    /// 描画が遅いためAPIを叩いてるんかと思ったが、描画が遅いだけであった
+    guard SpeakerManager.shared.names.isEmpty else { 
+			updateList()
+			print("---exec cache---")
+			return 
+		}
+    
     let task = session.dataTask(with:request,completionHandler: { [weak self] data, response, error in
     	guard let self = self else { return }
-      print(data, response, error.debugDescription, error?.localizedDescription)
-      
+
       if let d = data, let result = try? self.decoder.decode([Speaker].self, from: d) {
-          print("----result", result)
-        DispatchQueue.main.sync {
-        	  
-          self.listControl.items = result.map { $0.fullName }
-          self.listControl.elements.enumerated().forEach { i, row in
-    	 			let label = row.children.first?.asList?.children.first?.asRow?.children.first?.asLabel 
-    	  		label?.text = self.listControl.items[i] as? String ?? ""
-        	}
-        }
+        SpeakerManager.shared.names = result.map { $0.fullName }
+				self.updateList()
       }
     })
     task.resume()
-//		
-//	
-//		listControl.items = ["hoge", "huga", "fizz", "buzz", "hoge", "huga", "fizz", "buzz", "hoge", "huga", "fizz", "buzz"]
-//		listControl.elements.enumerated().forEach { i, row in
-//			let label = row.children.first?.asList?.children.first?.asRow?.children.first?.asLabel
-//			label?.text = listControl.items[i] as? String ?? ""
-//			
-//			
-////			print("---element0", (($0.children[0] as? SCDWidgetsListView)?.children[0] as? SCDWidgetsRowView)?.children)
-////			print("---element1", (($0.children[0] as? SCDWidgetsListView)?.children[1] as? SCDWidgetsRowView)?.children)
-//		}
 	}
+	
+	func updateList() {
+		DispatchQueue.main.sync {        	  
+			self.listControl.items = SpeakerManager.shared.names
+			self.listControl.elements.enumerated().forEach { i, row in
+				let label = row.children.first?.asList?.children.first?.asRow?.children.first?.asLabel 
+				label?.text = self.listControl.items[i] as? String ?? ""
+			}
+		}
+	}
+	
+	deinit {
+		debugPrint("---\(#function)---")
+	}
+}
+
+final class SpeakerManager {
+	
+	static let shared = SpeakerManager()
+	private init() {}
+	
+	var names: [String] = []
 }
 
 
