@@ -29,6 +29,11 @@ final class MainPageAdapter: SCDLatticePageAdapter {
 	
 	// MARK: Overrides
 	
+	override init() {
+		super.init()
+		debugPrint("---\(#function)---")
+	}
+	
 	override func load(_ path: String) {		
 		super.load(path)
 		debugPrint("---\(#function)---")
@@ -42,17 +47,23 @@ final class MainPageAdapter: SCDLatticePageAdapter {
 	
 	override func activate(_ view: SCDLatticeView?) {
 		super.activate(view)
+		
 		debugPrint("---\(#function)---")
+		debugPrint("---\(view?.page),\(view?.onSizeChanged),\(view?.adapter),\(view?.navigation)---")
 	}
 	
 	override func show(_ view: SCDLatticeView?, data: Any?) {
 		super.show(view, data: data)
+		
 		debugPrint("---\(#function)---")
+		debugPrint("---\(view?.page),\(view?.onSizeChanged),\(view?.adapter),\(view?.navigation)---")
 	}
 	
 	override func show(_ view: SCDLatticeView?) {
 		super.show(view)
+		
 		debugPrint("---\(#function)---")
+		debugPrint("---\(view?.page),\(view?.onSizeChanged),\(view?.adapter),\(view?.navigation)---")
 		
     let url = URL(string: "https://api.droidkaigi.jp/2020/speakers/")!
     let session = URLSession.shared

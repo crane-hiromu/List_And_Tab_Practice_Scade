@@ -8,7 +8,9 @@ class List_And_Tab_Practice_Scade: SCDApplication {
 	
 	private lazy var mainAdapter: MainPageAdapter = {
 		let adapter = MainPageAdapter()
+		debugPrint("---before load---")
 		adapter.load(MainPageAdapter.pageName)
+		debugPrint("---after load---")
 		return adapter
 	}()
 	
