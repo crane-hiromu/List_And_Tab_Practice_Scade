@@ -65,36 +65,29 @@ final class MainPageAdapter: SCDLatticePageAdapter {
 		debugPrint("---\(#function)---")
 		debugPrint("---\(view?.page),\(view?.onSizeChanged),\(view?.adapter),\(view?.navigation)---")
 		
-    let url = URL(string: "https://api.droidkaigi.jp/2020/speakers/")!
-    let session = URLSession.shared
-    
-    var request = URLRequest(url: url)
-    request.httpMethod = "GET"
-    request.addValue("application/json;charset=utf-8", forHTTPHeaderField: "Content-Type")
-    
-    /// 描画が遅いためAPIを叩いてるんかと思ったが、描画が遅いだけであった
-    guard SpeakerManager.shared.names.isEmpty else { 
-			updateList()
-			print("---exec cache---")
-			return 
-		}
-    
-    let task = session.dataTask(with:request,completionHandler: { [weak self] data, response, error in
-    	guard let self = self else { return }
-
-      if let d = data, let result = try? self.decoder.decode([Speaker].self, from: d) {
-        SpeakerManager.shared.names = result.map { $0.fullName }
-				self.updateList()
-      }
-    })
-    task.resume()
+	    let url = URL(string: "https://api.droidkaigi.jp/2020/speakers/")!
+	    let session = URLSession.shared
+	    
+	    var request = URLRequest(url: url)
+	    request.httpMethod = "GET"
+	    request.addValue("application/json;charset=utf-8", forHTTPHeaderField: "Content-Type")
+	    
+	    let task = session.dataTask(with:request,completionHandler: { [weak self] data, response, error in
+	      guard let self = self else { return }
+	
+	      if let d = data, let result = try? self.decoder.decode([Speaker].self, from: d) {
+			self.updateList(names: result.map { $0.fullName })
+	      }
+	    })
+	    task.resume()
 	}
 	
-	func updateList() {
-		DispatchQueue.main.sync {        	  
-			self.listControl.items = SpeakerManager.shared.names
-			self.listControl.elements.enumerated().forEach { i, row in
-				let label = row.children.first?.asList?.children.first?.asRow?.children.first?.asLabel 
+	func updateList(names: [String]) {
+		self.listControl.items = names
+		
+		self.listControl.elements.enumerated().forEach { i, row in
+			let label = row.children.first?.asList?.children.first?.asRow?.children.first?.asLabel
+			DispatchQueue.main.sync {
 				label?.text = self.listControl.items[i] as? String ?? ""
 			}
 		}
@@ -102,27 +95,6 @@ final class MainPageAdapter: SCDLatticePageAdapter {
 	
 	deinit {
 		debugPrint("---\(#function)---")
-	}
-}
-
-final class SpeakerManager {
-	
-	static let shared = SpeakerManager()
-	private init() {}
-	
-	var names: [String] = []
-}
-
-
-final class MainPageViewModel: EObject {
-	let txt: String
-	
-	init(txt: String) {
-		self.txt = txt
-	}
-	
-	convenience init(txt2: String) {
-		self.init(txt: txt2)
 	}
 }
 
