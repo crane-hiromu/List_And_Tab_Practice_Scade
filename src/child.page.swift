@@ -10,7 +10,9 @@ class ChildPageAdapter: SCDLatticePageAdapter {
 		
 		let button = self.page?.getWidgetByName("backButton") as? SCDWidgetsClickable
 		button?.onClick.append(SCDWidgetsEventHandler{ [weak self] _ in 
-			self?.navigation?.go("main.page")
+			self?.navigation?.push(page: MainPageAdapter.pageName, transition: .back)
+			
+			debugPrint("----", self?.navigation?.entryPoints, self?.navigation?.exitPoints)
 		})
 	}
 	

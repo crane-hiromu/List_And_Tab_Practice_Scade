@@ -69,13 +69,13 @@ final class MainPageAdapter: SCDLatticePageAdapter {
     override func activate(_ view: SCDLatticeView?) {
         super.activate(view)
         
-        debugPrint("---\(#function)---")
+        debugPrint("---\(#function)---", view)
     }
     
     override func show(_ view: SCDLatticeView?, data: Any?) {
         super.show(view, data: data)
         
-        debugPrint("---\(#function)---")
+        debugPrint("---\(#function)---", view, data)
     }
     
     override func show(_ view: SCDLatticeView?) {
@@ -92,6 +92,8 @@ final class MainPageAdapter: SCDLatticePageAdapter {
         
         let task = session.dataTask(with:request,completionHandler: { [weak self] data, response, error in
             guard let self = self else { return }
+        
+            debugPrint("---session---")
             
             if let d = data, let result = try? self.decoder.decode([Speaker].self, from: d) {
                 self.updateList(names: result.map { $0.fullName })
@@ -113,8 +115,8 @@ final class MainPageAdapter: SCDLatticePageAdapter {
     
     func onItemSelected(with event: SCDWidgetsItemEvent?) {
     	debugPrint("----onItemSelected", event?.item)
-//    	self.navigation?.go(ChildPageAdapter.pageName)
-    	self.navigation?.go(ChildPageAdapter.pageName, transition: "FORWARD_PUSH|BACKWARD_PUSH")
+    	
+    	self.navigation?.push(page: ChildPageAdapter.pageName, transition: .forward)
     }
     
     deinit {
