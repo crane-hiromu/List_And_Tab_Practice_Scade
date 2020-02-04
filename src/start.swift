@@ -8,18 +8,29 @@ class List_And_Tab_Practice_Scade: SCDApplication {
 	
 	private lazy var mainAdapter: MainPageAdapter = {
 		let adapter = MainPageAdapter()
-		debugPrint("---before load---")
+		debugPrint("---before load---", MainPageAdapter.pageName, ChildPageAdapter.pageName)
 		adapter.load(MainPageAdapter.pageName)
 		debugPrint("---after load---")
 		return adapter
 	}()
 	
+//	private lazy var childAdapter: ChildPageAdapter = {
+//		let adapter = ChildPageAdapter()
+//		debugPrint("---before load---")
+////		adapter.load(ChildPageAdapter.pageName)
+//		debugPrint("---after load---")
+//		return adapter
+//	}()
+//	
 	// MARK: Overrides
 		
 	override func onFinishLaunching() {	
 		super.onFinishLaunching()
 		debugPrint("---\(#function)---")
+
 		mainAdapter.show(window)
+		
+//		childAdapter.load(ChildPageAdapter.pageName)
 	}
 	
 	override func launch() {

@@ -4,13 +4,13 @@
     <backgroundColor Red="248" Green="248" Blue="248"/>
     <size width="414" height="896"/>
     <layout xsi:type="com.scade.sdk.layout:AutoLayout"/>
-    <children xsi:type="com.scade.sdk.view:Button" name="button1" drawing="/3/@children.1/@children.0" text="button" horizontalAlignment="CENTER">
+    <children xsi:type="com.scade.sdk.view:Button" name="backButton" drawing="/3/@children.1/@children.0" text="ぼたん" horizontalAlignment="CENTER">
       <layoutData xsi:type="com.scade.sdk.layout:AutoLayoutData">
         <constraints source="/0/@children.0" sourceAnchor="CENTER_X" target="/0" targetAnchor="CENTER_X" active="true"/>
-        <constraints source="/0/@children.0" sourceAnchor="TOP" target="/0/@children.1" targetAnchor="BOTTOM" constant="100.0" active="true"/>
+        <constraints source="/0/@children.0" sourceAnchor="CENTER_Y" target="/0" targetAnchor="CENTER_Y" active="true"/>
       </layoutData>
-      <size width="90" height="23"/>
-      <location x="162" y="222"/>
+      <size width="90" height="26"/>
+      <location x="162" y="435"/>
       <font fontFamily="ArialMT" size="17"/>
     </children>
     <children xsi:type="com.scade.sdk.view:Label" name="label1" drawing="/3/@children.1/@children.1" text="label" horizontalAlignment="CENTER">
@@ -64,14 +64,14 @@
             </expression>
           </constraints>
           <width value="90.0"/>
-          <height value="23.0"/>
+          <height value="26.0"/>
         </children>
-        <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text="button" anchor="middle" alignmentBaseline="central">
+        <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fillOpacity="1.0" strokeOpacity="1.0" opacity="1.0" fontSize="17" fontName="ArialMT" text="ぼたん" anchor="middle" alignmentBaseline="central">
           <fill xsi:type="svg_2:RGBColor" r="0.26666668" g="0.41568628" b="0.7019608"/>
           <x value="45.0"/>
-          <y value="11.0"/>
+          <y value="13.0"/>
         </children>
-        <matrix translateX="162.0" translateY="222.0"/>
+        <matrix translateX="162.0" translateY="435.0"/>
       </children>
       <children xsi:type="svg:Group">
         <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">

@@ -18,8 +18,19 @@ final class MainPageAdapter: SCDLatticePageAdapter {
     private lazy var listControl: SCDWidgetsList! = {
         let widget = self.page?.getWidgetByName("mainList")
         let list = widget as? SCDWidgetsList
+        list?.onItemSelected.append(SCDWidgetsItemSelectedEventHandler { [weak self] event in
+        	self?.onItemSelected(with: event)
+        })
         return list
     }()
+    
+    private lazy var childAdapter: ChildPageAdapter = {
+		let adapter = ChildPageAdapter()
+		debugPrint("---before load---")
+//		adapter.load(ChildPageAdapter.pageName)
+		debugPrint("---after load---")
+		return adapter
+	}()
     
     private let decoder: JSONDecoder = {
         let decoder = JSONDecoder()
@@ -43,27 +54,34 @@ final class MainPageAdapter: SCDLatticePageAdapter {
         statusVar.isExclude.toggle()
         debugPrint("---iOS---")
         #endif
+        
+        childAdapter.load(ChildPageAdapter.pageName)
+        
+        self.page?.onEnter.append(SCDWidgetsEnterEventHandler { [weak self] ev in
+        	debugPrint("---onEnter---", ev)
+        })
+        
+        self.page?.onExit.append(SCDWidgetsExitEventHandler { [weak self] ev in
+        	debugPrint("---onExit---", ev)
+        })
     }
     
     override func activate(_ view: SCDLatticeView?) {
         super.activate(view)
         
         debugPrint("---\(#function)---")
-        debugPrint("---\(view?.page),\(view?.onSizeChanged),\(view?.adapter),\(view?.navigation)---")
     }
     
     override func show(_ view: SCDLatticeView?, data: Any?) {
         super.show(view, data: data)
         
         debugPrint("---\(#function)---")
-        debugPrint("---\(view?.page),\(view?.onSizeChanged),\(view?.adapter),\(view?.navigation)---")
     }
     
     override func show(_ view: SCDLatticeView?) {
         super.show(view)
         
         debugPrint("---\(#function)---")
-        debugPrint("---\(view?.page),\(view?.onSizeChanged),\(view?.adapter),\(view?.navigation)---")
         
         let url = URL(string: "https://api.droidkaigi.jp/2020/speakers/")!
         let session = URLSession.shared
@@ -93,9 +111,18 @@ final class MainPageAdapter: SCDLatticePageAdapter {
         }
     }
     
+    func onItemSelected(with event: SCDWidgetsItemEvent?) {
+    	debugPrint("----onItemSelected", event?.item)
+//    	self.navigation?.go(ChildPageAdapter.pageName)
+    	self.navigation?.go(ChildPageAdapter.pageName, transition: "FORWARD_PUSH|BACKWARD_PUSH")
+    }
+    
     deinit {
         debugPrint("---\(#function)---")
     }
+    
+
+	
 }
 
 struct Speaker: Codable {
